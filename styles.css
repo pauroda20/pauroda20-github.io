@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#body_1 {
+    display: grid;
+    place-items: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #333;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+.countdown div {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+/* Cambiar los círculos a cuadrados */
+#days, #hours, #minutes, #seconds {
+    display: grid;
+    place-items: center;
+    border: solid 2px rgb(255, 255, 255);
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #3d4940; /* Color diferente pero que combina */
+    border-radius: 10px; /* Ajustar el valor para hacer que los elementos sean cuadrados */
+}
+
+span {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: #3d936b;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#primer_h1 {
+    color: white;
+    font-size: 60px;
+    border-radius: 30px;
+}
+
+/* CSS-TEXT DESPRES */
+.final-sms {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    place-items: center;
+    transform: translateY(-100%);
+    transition: ease-in-out 0.5s;
+    background-color: #333;
+}
+
+.primer_div {
+    width: 20%;
+    margin-top: 50px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+#primer_a {
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    font-size: 250%;
+    margin-left: 15%; /* Agregar margen automático para centrar horizontalmente */
+}
+
+
+/* CSS-SEGONA_PÀGINA */
+
+#body_2 {
+    width: x;
+    background-color: #333;
+}
+
+.div_segona {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.vafne {
+    color: #ff1500; /* Un color diferente pero complementario */
+    font-weight: bold;
+    font-size: 60px; /* Ajusta el tamaño del texto según tus preferencias */
+}
