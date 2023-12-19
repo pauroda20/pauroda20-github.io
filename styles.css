@@ -95,21 +95,36 @@ span {
 /* CSS-SEGONA_PÀGINA */
 
 #body_2 {
-    width: x;
+    height: 100vh; /* Ajustar la altura al 100% del viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333;
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
 }
 
 .div_segona {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #333;
-    text-align: center; /* Centra el contenido horizontalmente */
+    text-align: center;
 }
 
 .vafne {
-    color: #ff1500; /* Un color diferente pero complementario */
+    color: #ffffff;
     font-weight: bold;
-    font-size: 60px; /* Ajusta el tamaño del texto según tus preferencias */
+    font-size: 3em; /* Cambiar el tamaño del texto según tus preferencias */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agregar sombra al texto */
+}
+
+.div_segona:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://theobjective.com/wp-content/uploads/2020/09/kidd-keo-si-he-triunfado-es-por-mi-nadie-me-ha-regalado-nada.jpg'); /* Reemplaza 'ruta_de_la_imagen' con la URL de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Colocar detrás del contenido */
+    opacity: 0.7; /* Ajustar la opacidad del fondo */
 }
